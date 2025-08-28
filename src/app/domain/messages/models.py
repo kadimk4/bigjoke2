@@ -1,16 +1,18 @@
 from dataclasses import dataclass, field
 from uuid import uuid4, UUID
 
+
 @dataclass(frozen=True)
 class Text:
     value: str
-    
+
     def __post_init__(self):
         self._validate(self)
 
     def _validate(self) -> True:
-        """Какая-то валидация по длине или символам ;3 """
+        """Какая-то валидация по длине или символам ;3"""
         ...
+
 
 @dataclass(frozen=True, kw_only=True)
 class BaseMessage:
@@ -23,6 +25,6 @@ class BaseMessage:
         if isinstance(BaseMessage, other):
             return self.uuid == other.uuid
         return NotImplemented
-    
+
     def __hash__(self):
         return hash(self.uuid)

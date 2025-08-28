@@ -22,6 +22,8 @@ source = { virtual = "." }
 dependencies = [
     { name = "keydb" },
     { name = "msgspec" },
+    { name = "punq" },
+    { name = "python-dotenv" },
     { name = "ruff" },
     { name = "sqlalchemy" },
     { name = "starlite" },
@@ -31,6 +33,8 @@ dependencies = [
 requires-dist = [
     { name = "keydb", specifier = ">=0.0.1" },
     { name = "msgspec", specifier = ">=0.19.0" },
+    { name = "punq", specifier = ">=0.7.0" },
+    { name = "python-dotenv", specifier = ">=1.1.1" },
     { name = "ruff", specifier = ">=0.12.10" },
     { name = "sqlalchemy", specifier = ">=2.0.43" },
     { name = "starlite", specifier = ">=1.51.16" },
@@ -285,6 +289,15 @@ wheels = [
 ]
 
 [[package]]
+name = "punq"
+version = "0.7.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/e6/f1/c31e86ce1ab85837d8e6a6868163bae3afaef01c49d45f1bfa479c1a5b90/punq-0.7.0.tar.gz", hash = "sha256:bb7a6cc75a2e7d51b861b0e11f4830a12617b3ee33dbced9ce2be6a98ba39d63", size = 7254, upload-time = "2023-11-06T10:45:19.945Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/92/6a/c89602766d4416371eb801c3de89eda45fcea4435836ba7c01d1da88d47a/punq-0.7.0-py3-none-any.whl", hash = "sha256:7e0aca446c36a73674ec3fc078ec5e90e7a172ee349537d075ff20d73c3b1810", size = 7719, upload-time = "2023-11-06T10:45:18.118Z" },
+]
+
+[[package]]
 name = "pydantic"
 version = "1.10.22"
 source = { registry = "https://pypi.org/simple" }
@@ -328,6 +341,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/74/a6/a1bec785065f3ddabb161dd490a2fe681a56020111d4d315eeffa58a41f8/pydantic_openapi_schema-1.5.1.tar.gz", hash = "sha256:d9b56235f4c4817c6e3693c4f8122c3e5e9c75f6b3b454524ad985012a264daf", size = 29979, upload-time = "2023-01-17T17:18:21.376Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/bb/a1/9b906584055e2a9ee48368e2ad7148625e06594fb0f81f8656c6e71eb672/pydantic_openapi_schema-1.5.1-py3-none-any.whl", hash = "sha256:fd5b1bff81ff70faa87fec62bd8193ccd671f31bc15b32a4557623d3db0e5eae", size = 46208, upload-time = "2023-01-17T17:18:19.701Z" },
+]
+
+[[package]]
+name = "python-dotenv"
+version = "1.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f6/b0/4bc07ccd3572a2f9df7e6782f52b0c6c90dcbb803ac4a167702d7d0dfe1e/python_dotenv-1.1.1.tar.gz", hash = "sha256:a8a6399716257f45be6a007360200409fce5cda2661e3dec71d23dc15f6189ab", size = 41978, upload-time = "2025-06-24T04:21:07.341Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5f/ed/539768cf28c661b5b068d66d96a2f155c4971a5d55684a514c1a0e0dec2f/python_dotenv-1.1.1-py3-none-any.whl", hash = "sha256:31f23644fe2602f88ff55e1f5c79ba497e01224ee7737937930c448e4d0e24dc", size = 20556, upload-time = "2025-06-24T04:21:06.073Z" },
 ]
 
 [[package]]
